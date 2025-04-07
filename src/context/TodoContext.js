@@ -11,7 +11,7 @@ export const TodoProvider = ({ children }) => {
   const fetchTodos = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:5000/api/todos");
+      const res = await axios.get("http://localhost:5001/api/todos");
       setTodos(res.data);
     } catch (err) {
       setError(err.response?.data?.error || "Something went wrong");

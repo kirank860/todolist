@@ -6,6 +6,6 @@ A full-stack Todo app built with MongoDB, Express, React, and Node.js.
 
 ### Backend:
 ```bash
-cd backend
+cd client
 npm install
-npm run dev
+npm start

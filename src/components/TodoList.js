@@ -9,7 +9,7 @@ const AddTodo = () => {
   const { fetchTodos } = useTodo();
 
   const handleAdd = async data => {
-    await axios.post("http://localhost:5000/api/todos", data);
+    await axios.post("http://localhost:5001/api/todos", data);
     fetchTodos();
     navigate("/");
   };
